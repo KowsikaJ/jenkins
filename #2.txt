@@ -1,103 +1,0 @@
-Started by user Kowsika J
-Running as SYSTEM
-Building in workspace /var/lib/jenkins/workspace/Nginx_Task1
-[Nginx_Task1] $ /bin/bash /tmp/jenkins3519046486697350366.sh
-
-WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
-
-Get:1 http://security.ubuntu.com/ubuntu jammy-security InRelease [129 kB]
-Hit:2 https://download.docker.com/linux/ubuntu jammy InRelease
-Ign:3 https://pkg.jenkins.io/debian-stable binary/ InRelease
-Hit:4 http://in.archive.ubuntu.com/ubuntu jammy InRelease
-Hit:5 https://pkg.jenkins.io/debian-stable binary/ Release
-Get:6 http://in.archive.ubuntu.com/ubuntu jammy-updates InRelease [128 kB]
-Get:8 http://in.archive.ubuntu.com/ubuntu jammy-backports InRelease [127 kB]
-Reading package lists...
-E: Release file for http://security.ubuntu.com/ubuntu/dists/jammy-security/InRelease is not valid yet (invalid for another 14h 47min 27s). Updates for this repository will not be applied.
-E: Release file for http://in.archive.ubuntu.com/ubuntu/dists/jammy-updates/InRelease is not valid yet (invalid for another 14h 49min 25s). Updates for this repository will not be applied.
-E: Release file for http://in.archive.ubuntu.com/ubuntu/dists/jammy-backports/InRelease is not valid yet (invalid for another 14h 52min 1s). Updates for this repository will not be applied.
-
-WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
-
-Reading package lists...
-Building dependency tree...
-Reading state information...
-The following additional packages will be installed:
-  libnginx-mod-http-geoip2 libnginx-mod-http-image-filter
-  libnginx-mod-http-xslt-filter libnginx-mod-mail libnginx-mod-stream
-  libnginx-mod-stream-geoip2 nginx-common nginx-core
-Suggested packages:
-  fcgiwrap nginx-doc
-The following NEW packages will be installed:
-  libnginx-mod-http-geoip2 libnginx-mod-http-image-filter
-  libnginx-mod-http-xslt-filter libnginx-mod-mail libnginx-mod-stream
-  libnginx-mod-stream-geoip2 nginx nginx-common nginx-core
-0 upgraded, 9 newly installed, 0 to remove and 565 not upgraded.
-Need to get 697 kB of archives.
-After this operation, 2,395 kB of additional disk space will be used.
-Get:1 http://in.archive.ubuntu.com/ubuntu jammy-updates/main amd64 nginx-common all 1.18.0-6ubuntu14.6 [40.1 kB]
-Get:2 http://in.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libnginx-mod-http-geoip2 amd64 1.18.0-6ubuntu14.6 [12.0 kB]
-Get:3 http://in.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libnginx-mod-http-image-filter amd64 1.18.0-6ubuntu14.6 [15.5 kB]
-Get:4 http://in.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libnginx-mod-http-xslt-filter amd64 1.18.0-6ubuntu14.6 [13.8 kB]
-Get:5 http://in.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libnginx-mod-mail amd64 1.18.0-6ubuntu14.6 [45.8 kB]
-Get:6 http://in.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libnginx-mod-stream amd64 1.18.0-6ubuntu14.6 [73.0 kB]
-Get:7 http://in.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libnginx-mod-stream-geoip2 amd64 1.18.0-6ubuntu14.6 [10.1 kB]
-Get:8 http://in.archive.ubuntu.com/ubuntu jammy-updates/main amd64 nginx-core amd64 1.18.0-6ubuntu14.6 [483 kB]
-Get:9 http://in.archive.ubuntu.com/ubuntu jammy-updates/main amd64 nginx amd64 1.18.0-6ubuntu14.6 [3,882 B]
-debconf: unable to initialize frontend: Dialog
-debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
-debconf: falling back to frontend: Readline
-debconf: unable to initialize frontend: Readline
-debconf: (This frontend requires a controlling tty.)
-debconf: falling back to frontend: Teletype
-dpkg-preconfigure: unable to re-open stdin: 
-Fetched 697 kB in 3s (204 kB/s)
-Selecting previously unselected package nginx-common.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 161621 files and directories currently installed.)
-Preparing to unpack .../0-nginx-common_1.18.0-6ubuntu14.6_all.deb ...
-Unpacking nginx-common (1.18.0-6ubuntu14.6) ...
-Selecting previously unselected package libnginx-mod-http-geoip2.
-Preparing to unpack .../1-libnginx-mod-http-geoip2_1.18.0-6ubuntu14.6_amd64.deb ...
-Unpacking libnginx-mod-http-geoip2 (1.18.0-6ubuntu14.6) ...
-Selecting previously unselected package libnginx-mod-http-image-filter.
-Preparing to unpack .../2-libnginx-mod-http-image-filter_1.18.0-6ubuntu14.6_amd64.deb ...
-Unpacking libnginx-mod-http-image-filter (1.18.0-6ubuntu14.6) ...
-Selecting previously unselected package libnginx-mod-http-xslt-filter.
-Preparing to unpack .../3-libnginx-mod-http-xslt-filter_1.18.0-6ubuntu14.6_amd64.deb ...
-Unpacking libnginx-mod-http-xslt-filter (1.18.0-6ubuntu14.6) ...
-Selecting previously unselected package libnginx-mod-mail.
-Preparing to unpack .../4-libnginx-mod-mail_1.18.0-6ubuntu14.6_amd64.deb ...
-Unpacking libnginx-mod-mail (1.18.0-6ubuntu14.6) ...
-Selecting previously unselected package libnginx-mod-stream.
-Preparing to unpack .../5-libnginx-mod-stream_1.18.0-6ubuntu14.6_amd64.deb ...
-Unpacking libnginx-mod-stream (1.18.0-6ubuntu14.6) ...
-Selecting previously unselected package libnginx-mod-stream-geoip2.
-Preparing to unpack .../6-libnginx-mod-stream-geoip2_1.18.0-6ubuntu14.6_amd64.deb ...
-Unpacking libnginx-mod-stream-geoip2 (1.18.0-6ubuntu14.6) ...
-Selecting previously unselected package nginx-core.
-Preparing to unpack .../7-nginx-core_1.18.0-6ubuntu14.6_amd64.deb ...
-Unpacking nginx-core (1.18.0-6ubuntu14.6) ...
-Selecting previously unselected package nginx.
-Preparing to unpack .../8-nginx_1.18.0-6ubuntu14.6_amd64.deb ...
-Unpacking nginx (1.18.0-6ubuntu14.6) ...
-Setting up nginx-common (1.18.0-6ubuntu14.6) ...
-debconf: unable to initialize frontend: Dialog
-debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
-debconf: falling back to frontend: Readline
-Created symlink /etc/systemd/system/multi-user.target.wants/nginx.service → /lib/systemd/system/nginx.service.
-Setting up libnginx-mod-http-xslt-filter (1.18.0-6ubuntu14.6) ...
-Setting up libnginx-mod-http-geoip2 (1.18.0-6ubuntu14.6) ...
-Setting up libnginx-mod-mail (1.18.0-6ubuntu14.6) ...
-Setting up libnginx-mod-http-image-filter (1.18.0-6ubuntu14.6) ...
-Setting up libnginx-mod-stream (1.18.0-6ubuntu14.6) ...
-Setting up libnginx-mod-stream-geoip2 (1.18.0-6ubuntu14.6) ...
-Setting up nginx-core (1.18.0-6ubuntu14.6) ...
- * Upgrading binary nginx
-   ...done.
-Setting up nginx (1.18.0-6ubuntu14.6) ...
-Processing triggers for man-db (2.10.2-1) ...
-Processing triggers for ufw (0.36.1-4build1) ...
-Synchronizing state of nginx.service with SysV service script with /lib/systemd/systemd-sysv-install.
-Executing: /lib/systemd/systemd-sysv-install enable nginx
-Nginx installation completed!
-Finished: SUCCESS
